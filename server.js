@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
     res.sendFile(duongDanFile);
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('The app is listening on port 3000!');
 })
